@@ -24,19 +24,35 @@ $text-color: rgb(34, 34, 34) !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$brand-primary-color: rgb(25, 25, 55) !default;
 
-/// Light grey
+/// Secondary brand color
 /// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+$brand-secondary-color: rgb(1,220,212) !default;
 
-/// Medium grey
 /// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
+$light-blue: rgb(99,84,235) !default;
 
-/// Dark grey
+///@type Color
+$radical-red: rgb(255,0,84) !default;
+
+///@type Color
+$robin-blue: rgb(0,195,213) !default;
+
+///@type Color
+$pastel-red: rgb(249,89,89) !default;
+
+///@type Color
+$charcoal-grey: rgb(48,56,65) !default;
+
 /// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+$light-grey: rgb(243, 244, 248) !default;
+
+/// @type Color
+$mid-grey: rgb(236, 237, 242) !default;
+
+/// @type Color
+$dark-grey: rgb(171, 177, 183) !default;
 
 
 
