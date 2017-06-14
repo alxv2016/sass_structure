@@ -1,6 +1,5 @@
 /// Name:  utility
 /// Description: utilities classes
-
 /// Components:       'ui-clearfix'
 //                                 'ui-hidden'
 //                                 'ui-sr-only, ui-sr-only-focus'
@@ -11,7 +10,7 @@
  * 1. `table-cell` is used with `::before` because `table` creates a 1px gap when it becomes a flex item, only in Webkit
  * 2. `table` is used again with `::after` because `clear` only works with block elements.
  * Note: `display: block` with `overflow: hidden` is currently not working in the latest Safari
- */
+ **/
 
 /* 1 */
 .ui-clearfix::before {
@@ -27,12 +26,9 @@
 }
 
 
-
-
-
-/** hidden, `hidden` attribute also set here to make it stronger
-**
-*/
+/**
+*hidden, `hidden` attribute also set here to make it stronger
+**/
 
 [hidden],
 .ui-hidden {
@@ -40,13 +36,11 @@
 }
 
 
-
-
-/** Only display content to screen readers
-**
+/**
+*Only display content to screen readers
 *Use in conjunction with .sr-only, use .sr-only-focus to only display content when it's focused.
 * Useful for "Skip to main content" links;
-*/
+**/
 
 .ui-sr-only {
   position: absolute;
@@ -74,14 +68,12 @@
 }
 
 
-
-
-/**Responsive image
-**
+/**
+*Responsive image
 *Keep images from scaling beyond the width of their parents.
 * 1. Set a maximum realative to the parent
 *2. Override the height to auto, otherwise images will be stretched when setting width and height attribute on the img element.
-*/
+**/
 
 .ui-img-fluid {
   /*1*/

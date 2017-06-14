@@ -1,11 +1,6 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
-
-
-
-
-
 /// Body font family
 /// @type List
 $body-font-stack: 'Roboto Slab', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
@@ -23,64 +18,44 @@ $title-font-stack: 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetic
 $subtitle-font-stack: 'Roboto Condensed', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 
-
-
-
 ///Typography
-$global-font-size: 1rem !default;
-$global-line-height:  1.5 !default;
-$global-title-line-height:  1.2 !default;
-$global-medium-line-height:  1.8 !default;
-$global-medium-font-size: 1.125rem !default;  // 18px
-$global-small-font-size:  0.875rem !default; // 14px
+$global-font-size: 1rem !default; //16px
 $global-xsmall-font-size:  0.75rem !default; // 12px
+$global-small-font-size:  0.875rem !default; // 14px
+$global-medium-font-size: 1.125rem !default;  // 18px
 
-
-
-
-
+//Line height
+$global-line-height:  1.5 !default;
+$global-small-line-height:  1.2 !default;
+$global-medium-line-height:  1.8 !default;
 
 /// Copy text color
-/// @type Color
 $text-color: rgb(34, 34, 34) !default;
 
 /// Main brand color
-/// @type Color
 $brand-primary-color: rgb(25, 25, 55) !default;
 
 /// Secondary brand color
-/// @type Color
 $brand-secondary-color: rgb(1,220,212) !default;
 
 /// Colors
-/// @type Color
 $light-blue: rgb(99,84,235) !default;
 
-///@type Color
 $radical-red: rgb(255,0,84) !default;
 
-///@type Color
 $robin-blue: rgb(0,195,213) !default;
 
-///@type Color
 $pastel-red: rgb(249,89,89) !default;
 
-///@type Color
-$charcoal-grey: rgb(48,56,65) !default;
-
-/// @type Color
 $white: rgb(255, 255, 255) !default;
 
-/// @type Color
 $light-grey: rgb(243, 244, 248) !default;
 
-/// @type Color
 $mid-grey: rgb(236, 237, 242) !default;
 
-/// @type Color
 $dark-grey: rgb(171, 177, 183) !default;
 
-
+$charcoal-grey: rgb(48,56,65) !default;
 
 
 /// Breakpoints map
