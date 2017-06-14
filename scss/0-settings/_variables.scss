@@ -10,9 +10,13 @@
 /// @type List
 $body-font-stack: 'Roboto Slab', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
-///Title font family
+///Headline font family
 /// @type List
-$title-font-stack: 'Montserrat', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$headline-font-stack: 'Montserrat', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Title font family
+/// @type List
+$title-font-stack: 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// Sub title font family
 /// @type List
@@ -25,10 +29,11 @@ $subtitle-font-stack: 'Roboto Condensed', 'Helvetica Neue Light', 'Helvetica Neu
 ///Typography
 $global-font-size: 1rem !default;
 $global-line-height:  1.5 !default;
+$global-title-line-height:  1.2 !default;
 $global-medium-line-height:  1.8 !default;
-
 $global-medium-font-size: 1.125rem !default;  // 18px
 $global-small-font-size:  0.875rem !default; // 14px
+$global-xsmall-font-size:  0.75rem !default; // 12px
 
 
 

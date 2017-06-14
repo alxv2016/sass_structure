@@ -1,1 +1,17 @@
+p {
+    margin-bottom: 1.2rem;
+}
 
+h1,
+h2,
+h3,
+h4 {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: $global-title-line-height;
+    margin: 0;
+}
+
+small {
+    font-size: $global-xsmall-font-size;
+}
