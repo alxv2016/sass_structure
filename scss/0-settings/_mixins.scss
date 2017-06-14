@@ -50,3 +50,9 @@
   border: 1px solid $border;
   color: $color;
 }
+
+@mixin padding($values...) {
+    @each $var in $values {
+        padding: #{$var};
+    }
+}

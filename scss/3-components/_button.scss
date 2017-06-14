@@ -1,6 +1,6 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
+/**
+*#BUTTONS
+**/
 /*
  * 1. Remove margins in Chrome, Safari and Opera.
  * 2. Remove borders for `button`.
@@ -61,9 +61,11 @@
     text-decoration: none;
 }
 
+
 .ui-btn:not(:disabled) {
   cursor: pointer;
 }
+
 
 /*
  * Remove the inner border and padding in Firefox.
@@ -102,14 +104,17 @@
     content: ""
 }
 
+
 .ui-btn:focus::before,
 .ui-btn:hover::before {
     opacity: .3
 }
 
+
 .ui-btn:active::before {
     opacity: .6
 }
+
 
 .ui-btn:disabled::before {
     opacity: 0;
@@ -121,6 +126,8 @@
 //solid style
 .ui-btn-solid {
   @include ui-btn-style ($white, $light-grey, $text-color)
+
+
   &--blue {
     @include ui-btn-style ($robin-blue, $robin-blue,  $charcoal-grey)
   }
