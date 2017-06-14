@@ -19,10 +19,6 @@
 }
 
 
-
-
-
-
 /// Event wrapper
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector
@@ -44,13 +40,14 @@
   }
 }
 
-
+/// Button styles modifiers
 @mixin ui-btn-style( $bg, $border, $color ) {
   background-color: $bg;
   border: 1px solid $border;
   color: $color;
 }
 
+///Padding mixings
 @mixin padding($values...) {
     @each $var in $values {
         padding: #{$var};

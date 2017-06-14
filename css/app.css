@@ -75,8 +75,8 @@
   padding: 0; }
 
 /* Hover */
-.ui-btn:hover,
-.ui-btn:focus {
+.ui-btn:focus,
+.ui-btn:hover {
   /* 8 */
   text-decoration: none; }
 
@@ -100,10 +100,10 @@
 
 .ui-btn:focus::before,
 .ui-btn:hover::before {
-  opacity: .3; }
+  opacity: 0.3; }
 
 .ui-btn:active::before {
-  opacity: .6; }
+  opacity: 0.6; }
 
 .ui-btn:disabled::before {
   opacity: 0; }
