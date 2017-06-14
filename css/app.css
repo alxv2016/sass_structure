@@ -10,6 +10,7 @@
  * 8. Align text if button has a width
  * 9. Required for `a`.
  */
+
 .ui-btn {
   /* 1 */
   margin: 0;
@@ -59,25 +60,30 @@
   /* 8 */
   text-align: center;
   /* 9 */
-  text-decoration: none; }
-
+  text-decoration: none;
+}
 .ui-btn:not(:disabled) {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 /*
  * Remove the inner border and padding in Firefox.
  */
+
 .ui-btn::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /* Hover */
-.ui-btn:hover,
-.ui-btn:focus {
+
+.ui-btn:hover, .ui-btn:focus {
   /* 8 */
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /* Hover Active Focus shader*/
+
 .ui-btn:before {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
@@ -93,26 +99,29 @@
   transition-property: opacity;
   opacity: 0;
   pointer-events: none;
-  content: ""; }
-
-.ui-btn:focus::before,
-.ui-btn:hover::before {
-  opacity: .3; }
-
+  content: "";
+}
+.ui-btn:focus::before, .ui-btn:hover::before {
+  opacity: .3;
+}
 .ui-btn:active::before {
-  opacity: .6; }
-
+  opacity: .6;
+}
 .ui-btn:disabled::before {
-  opacity: 0; }
+  opacity: 0;
+}
 
 /*
 *Button styles
 */
+
 .ui-btn-solid {
   background-color: white;
   border: 1px solid #f3f4f8;
-  color: #222222; }
-  .ui-btn-solid.ui-btn-solid--blue {
-    background-color: #00c3d5;
-    border: 1px solid #00c3d5;
-    color: #303841; }
+  color: #222222;
+}
+.ui-btn-solid--blue {
+  background-color: #00c3d5;
+  border: 1px solid #00c3d5;
+  color: #303841;
+}

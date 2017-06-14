@@ -121,7 +121,7 @@
 //solid style
 .ui-btn-solid {
   @include ui-btn-style ($white, $light-grey, $text-color)
-  &.ui-btn-solid--blue {
+  &--blue {
     @include ui-btn-style ($robin-blue, $robin-blue,  $charcoal-grey)
   }
 }
