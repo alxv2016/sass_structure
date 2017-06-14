@@ -43,3 +43,22 @@ a {
     text-decoration: underline;
   }
 }
+/**
+*Basic body styles
+*/
+body {
+  font-size: $global-font-size;
+  background-color: $light-grey;
+  line-height: $global-line-height;
+  font-weight: 300;
+  font-family: $body-font-stack;
+  color: $text-color;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+
+  @include respond-to ('medium') {
+    font-size: $global-medium-font-size;
+  }
+
+}
