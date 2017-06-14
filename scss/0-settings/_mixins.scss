@@ -43,3 +43,10 @@
     }
   }
 }
+
+
+@mixin ui-btn-style( $bg, $border, $color ) {
+  background-color: $bg;
+  border: 1px solid $border;
+  color: $color;
+}
