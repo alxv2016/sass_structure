@@ -30,6 +30,7 @@ $brand-primary-color: rgb(25, 25, 55) !default;
 /// @type Color
 $brand-secondary-color: rgb(1,220,212) !default;
 
+/// Colors
 /// @type Color
 $light-blue: rgb(99,84,235) !default;
 
@@ -53,35 +54,3 @@ $mid-grey: rgb(236, 237, 242) !default;
 
 /// @type Color
 $dark-grey: rgb(171, 177, 183) !default;
-
-
-
-
-
-/// Container's maximum width
-/// @type Length
-$max-width: 1180px !default;
-
-
-
-
-
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
-) !default;
-
-
-
-
-
-
-/// Relative or absolute URL where all assets are served from
-/// @type String
-/// @example scss - When using a CDN
-///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
