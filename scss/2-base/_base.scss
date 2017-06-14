@@ -1,6 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
+
+
+
+
+
 /**
 *Font family :
 *font-family: 'Montserrat', sans-serif;
@@ -12,12 +17,14 @@
  * Set up a decent box model on the root element
  */
 
-html {
-  font-size: 16px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
-  height: 100%;
+html
+{
+    font-size: 16px;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;  height: 100%;
+
+    -ms-overflow-style: scrollbar;
 }
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
@@ -27,39 +34,47 @@ html {
  */
 *,
 *::after,
-*::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+*::before
+{
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 /**
 *Basic body styles
 */
 
-body {
-  font-size: $global-font-size;
-  background-color: $light-grey;
-  line-height: $global-line-height;
-  font-weight: 300;
-  font-family: $body-font-stack;
-  color: $text-color;
-  margin: 0;
-  height: 100%;
-  padding: 0;
+body
+{
+    font-family: $body-font-stack;
+    font-size: $global-font-size;
+    font-weight: 300;
+    line-height: $global-line-height;
 
-  @include respond-to ('medium') {
-    font-size: $global-medium-font-size;
-    line-height: $global-medium-line-height;
-  }
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    color: $text-color;
+    background-color: $light-grey;
+
+    @include respond-to ('medium')
+    {
+        font-size: $global-medium-font-size;
+        line-height: $global-medium-line-height;
+    }
 }
+
+
 /**
  * Basic styles for links
  */
 
-a {
-  color: $brand-secondary-color;
-  text-decoration: none;
-  @include on-event {
-    color: $brand-secondary-color;
-    text-decoration: underline;
-  }
+a
+{
+    text-decoration: none;  color: $brand-secondary-color;
+
+    @include on-event
+    {
+        text-decoration: underline;  color: $brand-secondary-color;
+    }
 }
