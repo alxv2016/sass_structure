@@ -35,7 +35,7 @@ a {
   color: #01dcd4;
   text-decoration: none; }
   a:hover, a:active, a:focus {
-    color: #222222;
+    color: #01dcd4;
     text-decoration: underline; }
 
 /**
@@ -53,7 +53,8 @@ body {
   padding: 0; }
   @media (min-width: 768px) {
     body {
-      font-size: 1.125rem; } }
+      font-size: 1.125rem;
+      line-height: 1.8; } }
 
 /** clearfix
 **

@@ -6,34 +6,33 @@
 
 
 
-/// Regular font family
+/// Body font family
 /// @type List
 $body-font-stack: 'Roboto Slab', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
-/// Code (monospace) font family
+///Title font family
 /// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$title-font-stack: 'Montserrat', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Sub title font family
+/// @type List
+$subtitle-font-stack: 'Roboto Condensed', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 
 
 
 
 ///Typography
-$global-font-size:                               1rem !default;
-$global-line-height:                             1.5 !default;      // 24px
+$global-font-size: 1rem !default;
+$global-line-height:  1.5 !default;
+$global-medium-line-height:  1.8 !default;
 
-$global-medium-font-size:                        1.125rem !default;  // 18px
-$global-small-font-size:                         0.875rem !default; // 14px
+$global-medium-font-size: 1.125rem !default;  // 18px
+$global-small-font-size:  0.875rem !default; // 14px
 
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  'small': 576px,
-  'medium': 768px,
-  'large': 992px,
-  'xlarge': 1200px,
-) !default;
+
+
+
 
 
 /// Copy text color
@@ -72,3 +71,16 @@ $mid-grey: rgb(236, 237, 242) !default;
 
 /// @type Color
 $dark-grey: rgb(171, 177, 183) !default;
+
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 576px,
+  'medium': 768px,
+  'large': 992px,
+  'xlarge': 1200px,
+) !default;

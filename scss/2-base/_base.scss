@@ -39,7 +39,7 @@ a {
   color: $brand-secondary-color;
   text-decoration: none;
   @include on-event {
-    color: $text-color;
+    color: $brand-secondary-color;
     text-decoration: underline;
   }
 }
@@ -59,6 +59,6 @@ body {
 
   @include respond-to ('medium') {
     font-size: $global-medium-font-size;
+    line-height: $global-medium-line-height;
   }
-
 }
