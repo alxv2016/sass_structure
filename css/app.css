@@ -48,6 +48,7 @@
   -webkit-transition-property: color, background-color, border-color;
   -o-transition-property: color, background-color, border-color;
   transition-property: color, background-color, border-color;
+  /* mobile specific */
   -webkit-appearance: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.18);
   -moz-osx-font-smoothing: grayscale;
@@ -71,27 +72,8 @@
   text-decoration: none;
 }
 
-.ui-btn:not(:disabled) {
-  cursor: pointer;
-}
-
-/*
- * Remove the inner border and padding in Firefox.
- */
-.ui-btn::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/* Hover */
-.ui-btn:focus,
-.ui-btn:hover {
-  /* 8 */
-  text-decoration: none;
-}
-
-/* Hover Active Focus shader*/
-.ui-btn:before {
+.ui-btn::before {
+  /* Hover,Active,Focus shader*/
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
@@ -109,6 +91,24 @@
   content: "";
 }
 
+.ui-btn:hover, .ui-btn:active, .ui-btn:focus {
+  /*hover,active,focus*/
+  /* 8 */
+  text-decoration: none;
+}
+
+.ui-btn:not(:disabled) {
+  cursor: pointer;
+}
+
+/*
+ * Remove the inner border and padding in Firefox.
+ */
+.ui-btn::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
 .ui-btn:focus::before,
 .ui-btn:hover::before {
   opacity: 0.3;
@@ -122,17 +122,87 @@
   opacity: 0;
 }
 
-/*
-*Button styles
-*/
+/**
+*#Button styles
+**/
 .ui-btn-solid {
   color: #222831;
   border: 1px solid #f3f4f8;
   background-color: white;
 }
 
+.ui-btn-solid--invert {
+  /*inverted solid*/
+  color: white;
+  border: 1px solid #222831;
+  background-color: #222831;
+}
+
+.ui-btn-solid--attn {
+  /*attention color*/
+  color: #303841;
+  border: 1px solid #ff0054;
+  background-color: #ff0054;
+}
+
 .ui-btn-solid--blue {
+  /*robin blue button*/
   color: #303841;
   border: 1px solid #00c3d5;
   background-color: #00c3d5;
+}
+
+.ui-btn-solid--red {
+  /*pastel red*/
+  color: #303841;
+  border: 1px solid #f95959;
+  background-color: #f95959;
+}
+
+.ui-btn-solid--light-blue {
+  /*light blue*/
+  color: white;
+  border: 1px solid #6354eb;
+  background-color: #6354eb;
+}
+
+.ui-btn-outline {
+  color: #222831;
+  border: 1px solid #222831;
+  background-color: transparent;
+}
+
+.ui-btn-outline--invert {
+  /*inverted solid*/
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.ui-btn-outline--attn {
+  /*attention color*/
+  color: #ff0054;
+  border: 1px solid #ff0054;
+  background-color: transparent;
+}
+
+.ui-btn-outline--blue {
+  /*robin blue button*/
+  color: #00c3d5;
+  border: 1px solid #00c3d5;
+  background-color: transparent;
+}
+
+.ui-btn-outline--red {
+  /*pastel red*/
+  color: #f95959;
+  border: 1px solid #f95959;
+  background-color: transparent;
+}
+
+.ui-btn-outline--light-blue {
+  /*light blue*/
+  color: #6354eb;
+  border: 1px solid #6354eb;
+  background-color: transparent;
 }

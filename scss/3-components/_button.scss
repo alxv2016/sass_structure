@@ -35,10 +35,9 @@
   border-radius: 2px;
   position: relative;
   text-transform: uppercase;
-  -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
-  -webkit-transition-property: color, background-color, border-color;
   transition-property: color, background-color, border-color;
+  /* mobile specific */
   -webkit-appearance: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, .18);
   -moz-osx-font-smoothing: grayscale;
@@ -60,6 +59,28 @@
   text-align: center;
   /* 9 */
   text-decoration: none;
+
+  &::before {
+    /* Hover,Active,Focus shader*/
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.1s ease-in-out;
+    transition-property: opacity;
+    opacity: 0;
+    pointer-events: none;
+    content: "";
+  }
+
+  @include on-event {
+    /*hover,active,focus*/
+    /* 8 */
+    text-decoration: none;
+  }
+
 }
 
 .ui-btn:not(:disabled) {
@@ -71,28 +92,6 @@
 .ui-btn::-moz-focus-inner {
   border: 0;
   padding: 0;
-}
-/* Hover */
-.ui-btn:focus,
-.ui-btn:hover {
-  /* 8 */
-  text-decoration: none;
-}
-/* Hover Active Focus shader*/
-.ui-btn:before {
-  background-color: rgba(0, 0, 0, .3);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: 0.1s ease-in-out;
-  transition: 0.1s ease-in-out;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-  opacity: 0;
-  pointer-events: none;
-  content: "";
 }
 
 .ui-btn:focus::before,
@@ -107,14 +106,68 @@
 .ui-btn:disabled::before {
   opacity: 0;
 }
-/*
-*Button styles
-*/
+/**
+*#Button styles
+**/
 //solid style
-
 .ui-btn-solid {
-  @include ui-btn-style ($frost-white, $light-grey, $onyx-black) &--blue {
+  @include ui-btn-style ($frost-white, $light-grey, $onyx-black)
+///modifier
+
+  &--invert {
+  /*inverted solid*/
+   @include ui-btn-style ($onyx-black, $onyx-black, $frost-white)
+  }
+
+  &--attn {
+  /*attention color*/
+   @include ui-btn-style ($radical-red, $radical-red, $charcoal-grey)
+  }
+
+  &--blue {
+    /*robin blue button*/
      @include ui-btn-style ($robin-blue, $robin-blue, $charcoal-grey)
   }
+
+  &--red {
+    /*pastel red*/
+     @include ui-btn-style ($pastel-red, $pastel-red, $charcoal-grey)
+  }
+
+  &--light-blue {
+    /*light blue*/
+     @include ui-btn-style ($light-blue, $light-blue, $frost-white)
+  }
+
 }
 //outline style
+.ui-btn-outline {
+@include ui-btn-style($transparent, $onyx-black, $onyx-black)
+///modifiers
+  &--invert {
+  /*inverted solid*/
+   @include ui-btn-style($transparent, $frost-white, $frost-white)
+  }
+
+  &--attn {
+  /*attention color*/
+   @include ui-btn-style ($transparent, $radical-red, $radical-red)
+  }
+
+  &--blue {
+    /*robin blue button*/
+     @include ui-btn-style ($transparent, $robin-blue, $robin-blue)
+  }
+
+  &--red {
+    /*pastel red*/
+     @include ui-btn-style ($transparent, $pastel-red, $pastel-red)
+  }
+
+  &--light-blue {
+    /*light blue*/
+     @include ui-btn-style ($transparent, $light-blue, $light-blue)
+  }
+
+
+}
