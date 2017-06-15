@@ -17,15 +17,15 @@
  * Set up a decent box model on the root element
  */
 
-html
-{
+
+html {
     font-size: 16px;
-
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;  height: 100%;
-
+    box-sizing: border-box;  height: 100%;
     -ms-overflow-style: scrollbar;
 }
+
+
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
@@ -34,34 +34,31 @@ html
  */
 *,
 *::after,
-*::before
-{
+*::before {
     -webkit-box-sizing: inherit;
-            box-sizing: inherit;
+    box-sizing: inherit;
 }
+
+
 /**
 *Basic body styles
 */
-
-body
-{
+body {
     font-family: $body-font-stack;
     font-size: $global-font-size;
     font-weight: 300;
     line-height: $global-line-height;
-
     height: 100%;
     margin: 0;
     padding: 0;
-
     color: $text-color;
     background-color: $light-grey;
 
-    @include respond-to ('medium')
-    {
+    @include respond-to ('medium') {
         font-size: $global-medium-font-size;
         line-height: $global-medium-line-height;
     }
+
 }
 
 
@@ -69,12 +66,11 @@ body
  * Basic styles for links
  */
 
-a
-{
+a {
     text-decoration: none;  color: $brand-secondary-color;
 
-    @include on-event
-    {
+    @include on-event {
         text-decoration: underline;  color: $brand-secondary-color;
     }
+
 }
