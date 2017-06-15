@@ -26,12 +26,13 @@
   /* 5 */
   text-transform: none;
   /* 6 */
-  font-family: $subtitle-font-stack;
+  font-family: $title-font-stack;
   display: inline-block;
   box-sizing: border-box;
   padding: 14px 30px;
   vertical-align: middle;
   font-size: $global-font-size;
+  font-weight: 500;
   border-radius: 2px;
   position: relative;
   text-transform: uppercase;
@@ -81,6 +82,17 @@
     text-decoration: none;
   }
 
+  //modifier
+  &--small {
+    /* small button */
+    @include padding (8px  24px)
+  }
+
+  &--large {
+    /* large button */
+    @include padding (18px  38px)
+  }
+
 }
 
 .ui-btn:not(:disabled) {
@@ -121,17 +133,17 @@
 
   &--attn {
   /*attention color*/
-   @include ui-btn-style ($radical-red, $radical-red, $charcoal-grey)
+   @include ui-btn-style ($radical-red, $radical-red, $frost-white)
   }
 
   &--blue {
     /*robin blue button*/
-     @include ui-btn-style ($robin-blue, $robin-blue, $charcoal-grey)
+     @include ui-btn-style ($robin-blue, $robin-blue, $onyx-black)
   }
 
   &--red {
     /*pastel red*/
-     @include ui-btn-style ($pastel-red, $pastel-red, $charcoal-grey)
+     @include ui-btn-style ($pastel-red, $pastel-red, $onyx-black)
   }
 
   &--light-blue {
@@ -156,12 +168,12 @@
 
   &--blue {
     /*robin blue button*/
-     @include ui-btn-style ($transparent, $robin-blue, $robin-blue)
+     @include ui-btn-style ($transparent, $robin-blue, $onyx-black)
   }
 
   &--red {
     /*pastel red*/
-     @include ui-btn-style ($transparent, $pastel-red, $pastel-red)
+     @include ui-btn-style ($transparent, $pastel-red, $onyx-black)
   }
 
   &--light-blue {

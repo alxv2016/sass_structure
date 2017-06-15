@@ -32,13 +32,14 @@
   /* 5 */
   text-transform: none;
   /* 6 */
-  font-family: "Roboto Condensed", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   display: inline-block;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 14px 30px;
   vertical-align: middle;
   font-size: 1rem;
+  font-weight: 500;
   border-radius: 2px;
   position: relative;
   text-transform: uppercase;
@@ -97,6 +98,16 @@
   text-decoration: none;
 }
 
+.ui-btn--small {
+  /* small button */
+  padding: 8px 24px;
+}
+
+.ui-btn--large {
+  /* large button */
+  padding: 18px 38px;
+}
+
 .ui-btn:not(:disabled) {
   cursor: pointer;
 }
@@ -126,7 +137,7 @@
 *#Button styles
 **/
 .ui-btn-solid {
-  color: #222831;
+  color: #151618;
   border: 1px solid #f3f4f8;
   background-color: white;
 }
@@ -134,29 +145,29 @@
 .ui-btn-solid--invert {
   /*inverted solid*/
   color: white;
-  border: 1px solid #222831;
-  background-color: #222831;
+  border: 1px solid #151618;
+  background-color: #151618;
 }
 
 .ui-btn-solid--attn {
   /*attention color*/
-  color: #303841;
-  border: 1px solid #ff0054;
-  background-color: #ff0054;
+  color: white;
+  border: 1px solid #e6004c;
+  background-color: #e6004c;
 }
 
 .ui-btn-solid--blue {
   /*robin blue button*/
-  color: #303841;
-  border: 1px solid #00c3d5;
-  background-color: #00c3d5;
+  color: #151618;
+  border: 1px solid #06c7d9;
+  background-color: #06c7d9;
 }
 
 .ui-btn-solid--red {
   /*pastel red*/
-  color: #303841;
-  border: 1px solid #f95959;
-  background-color: #f95959;
+  color: #151618;
+  border: 1px solid #f56262;
+  background-color: #f56262;
 }
 
 .ui-btn-solid--light-blue {
@@ -167,8 +178,8 @@
 }
 
 .ui-btn-outline {
-  color: #222831;
-  border: 1px solid #222831;
+  color: #151618;
+  border: 1px solid #151618;
   background-color: transparent;
 }
 
@@ -181,22 +192,22 @@
 
 .ui-btn-outline--attn {
   /*attention color*/
-  color: #ff0054;
-  border: 1px solid #ff0054;
+  color: #e6004c;
+  border: 1px solid #e6004c;
   background-color: transparent;
 }
 
 .ui-btn-outline--blue {
   /*robin blue button*/
-  color: #00c3d5;
-  border: 1px solid #00c3d5;
+  color: #151618;
+  border: 1px solid #06c7d9;
   background-color: transparent;
 }
 
 .ui-btn-outline--red {
   /*pastel red*/
-  color: #f95959;
-  border: 1px solid #f95959;
+  color: #151618;
+  border: 1px solid #f56262;
   background-color: transparent;
 }
 
