@@ -11,6 +11,7 @@
 /// @param {String} $breakpoint - Breakpoint
 /// @requires $breakpoints
 @mixin respond-to($breakpoint) {
+
     @if map-has-key($breakpoints, $breakpoint) {
         @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
             @content;
@@ -21,7 +22,7 @@
         @warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. '
         + 'Please make sure it is defined in `$breakpoints` map.';
     }
-    
+
 }
 
 
@@ -29,10 +30,9 @@
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector
 /// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
-@mixin on-event($self: false)
-{
-    @if $self
-    {
+@mixin on-event($self: false) {
+
+    @if $self {
         &,
         &:hover,
         &:active,
@@ -40,8 +40,7 @@
         {
             @content;
         }
-    } @else
-    {
+    } @else {
         &:hover,
         &:active,
         &:focus
@@ -49,11 +48,11 @@
             @content;
         }
     }
+
 }
 
 /// Button styles modifiers
-@mixin ui-btn-style( $background-color, $border, $color )
-{
+@mixin ui-btn-style( $background-color, $border, $color ) {
     color: $color;
     border: 1px solid $border;
     background-color: $background-color;
@@ -61,10 +60,34 @@
 
 
 ///Padding mixings
-@mixin padding($values...)
-{
+@mixin padding($values...) {
+
     @each $var in $values
     {
         padding: #{$var};
     }
+
+}
+
+
+///Clear fix
+/** clearfix
+**
+ * 1. `table-cell` is used with `::before` because `table` creates a 1px gap when it becomes a flex item, only in Webkit
+ * 2. `table` is used again with `::after` because `clear` only works with block elements.
+ * Note: `display: block` with `overflow: hidden` is currently not working in the latest Safari
+ **/
+@mixin clearfix() {
+/* 1 */
+  &::before {
+    content: "";
+    display: table-cell;
+  }
+/* 2 */
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+
 }
