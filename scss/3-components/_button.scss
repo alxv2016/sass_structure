@@ -123,7 +123,7 @@
 **/
 //solid style
 .ui-btn-solid {
-  @include ui-btn-style ($frost-white, $light-grey, $onyx-black)
+  @include ui-btn-style ($frost-white, $dark-grey, $onyx-black)
 ///modifier
 
   &--invert {
