@@ -284,13 +284,21 @@ small {
   font-family: "Roboto Condensed", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   text-transform: uppercase;
   padding: 4px 8px;
-  background: #e6004c;
   line-height: 1.2;
   font-size: 0.75rem;
-  color: white;
   vertical-align: middle;
   border-radius: 2px;
   white-space: nowrap;
+}
+
+.ui-label--attn {
+  background-color: #e6004c;
+  color: white;
+}
+
+.ui-label--blue {
+  background-color: #6354eb;
+  color: white;
 }
 
 /**

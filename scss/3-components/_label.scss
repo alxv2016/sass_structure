@@ -10,11 +10,19 @@ $label-padding-horizontal: 8px !default;
   font-family: $subtitle-font-stack;
   text-transform: uppercase;
   padding: $label-padding-vertical $label-padding-horizontal;
-  background: $radical-red;
   line-height: $global-small-line-height;
   font-size: $global-xsmall-font-size;
-  color: $frost-white;
   vertical-align: middle;
   border-radius: 2px;
   white-space: nowrap;
+
+  &--attn {
+    background-color: $radical-red;
+    color: $frost-white;
+  }
+
+  &--blue {
+    background-color: $light-blue;
+    color: $frost-white;
+  }
 }
