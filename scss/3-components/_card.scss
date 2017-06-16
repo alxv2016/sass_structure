@@ -12,8 +12,11 @@ $card-body-font: $title-font-stack; //
 *Default card
 **/
 .ui-card {
+  display: flex;
+  flex-flow: column;
   position: relative;
   box-sizing: border-box;
+  height: 100%;
 
   &__title {
     font-family: $card-title-font;
@@ -35,6 +38,7 @@ $card-body-font: $title-font-stack; //
   }
 
   &__body {
+    flex: 1 0 auto;
     font-family: $card-body-font;
     padding: $card-body-padding-vertical $card-body-padding-horizontal;
   }

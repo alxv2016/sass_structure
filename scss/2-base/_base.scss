@@ -1,11 +1,6 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
-
-
-
-
-
 /**
 *Font family :
 *font-family: 'Montserrat', sans-serif;
@@ -13,64 +8,65 @@
 *font-family: 'Roboto Condensed', sans-serif;
 *font-family: 'Roboto Slab', serif;
 */
-@import url( 'https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto+Condensed:400,700|Roboto+Slab:300,400,700|Roboto:300,500,700'); /**
+@import url( 'https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto+Condensed:400,700|Roboto+Slab:300,400,700|Roboto:300,500,700');
+/**
  * Set up a decent box model on the root element
  */
-
-
 html {
-    font-size: 16px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;  height: 100%;
-    -ms-overflow-style: scrollbar;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  -ms-overflow-style: scrollbar;
 }
-
-
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
  * making all elements inheriting from the root box-sizing value
  * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
+
 *,
 *::after,
 *::before {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
-
-
 /**
 *Basic body styles
 */
+
 body {
-    font-family: $body-font-stack;
-    font-size: $global-font-size;
-    font-weight: 300;
-    line-height: $global-line-height;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    color: $text-color;
-    background-color: $light-grey;
+  font-family: $body-font-stack;
+  font-size: $global-font-size;
+  font-weight: 300;
+  line-height: $global-line-height;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  background-color: $light-grey;
 
-    @include respond-to ('medium') {
-        font-size: $global-medium-font-size;
-        line-height: $global-medium-line-height;
-    }
-
+  @include respond-to ('medium') {
+    font-size: $global-medium-font-size;
+    line-height: $global-medium-line-height;
+  }
 }
-
-
 /**
  * Basic styles for links
  */
-
 a {
-    text-decoration: none;  color: $brand-secondary-color;
+  text-decoration: none;
+  color: $brand-secondary-color;
+  @include on-event {
+    text-decoration: underline;
+    color: $brand-secondary-color;
+  }
+}
+/**
+* adding 8px bottom margin to boostrap columns on stack
+**/
 
-    @include on-event {
-        text-decoration: underline;  color: $brand-secondary-color;
-    }
-
+[class*="col-"] {
+  margin-bottom: 8px;
 }
