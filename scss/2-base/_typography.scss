@@ -1,17 +1,30 @@
 p {
-    margin-bottom: 1.2rem;
+  margin: 0 0 1.125rem; //18px
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-weight: inherit;
-    font-size: inherit;
-    line-height: $global-small-line-height;
-    margin: 0;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: $global-small-line-height;
+  margin: 0 0 1.125rem; //18px
 }
 
 small {
-    font-size: $global-xsmall-font-size;
+  font-size: $global-xsmall-font-size;
+}
+
+.ui-text-meta {
+  font-family: $subtitle-font-stack;
+  font-size: $global-xsmall-font-size;
+  text-transform: uppercase;
+  color: $charcoal-grey;
+  margin: 0;
+
+  &--attn {
+    font-weight: 700;
+    color: $radical-red;
+  }
 }

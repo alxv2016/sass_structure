@@ -13,7 +13,6 @@
  * 8. Align text if button has a width
  * 9. Required for `a`.
  */
-
 .ui-btn {
   /* 4 */
   font: inherit;
@@ -104,7 +103,6 @@
 /*
  * Remove the inner border and padding in Firefox.
  */
-
 .ui-btn::-moz-focus-inner {
   padding: 0;
   border: 0;
@@ -129,7 +127,6 @@
 
 .ui-btn-solid {
   @include ui-btn-style ($frost-white, $dark-grey, $onyx-black);
-  margin: 8px;
   ///modifier
   &--invert {
     /*inverted solid*/
@@ -160,7 +157,6 @@
 
 .ui-btn-outline {
   @include ui-btn-style($transparent, $onyx-black, $onyx-black);
-  margin: 8px;
   ///modifiers
   &--invert {
     /*inverted solid*/
@@ -200,16 +196,12 @@
   position: relative;
 
   .ui-btn-solid {
-    margin: 0;
-
     &:nth-child(n+2) {
       margin-left: -2px;
     }
   }
 
   .ui-btn-outline {
-    margin: 0;
-
     &:nth-child(n+2) {
       margin-left: -2px;
     }

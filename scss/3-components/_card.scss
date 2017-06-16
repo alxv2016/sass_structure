@@ -1,0 +1,60 @@
+/**
+*#CARD
+**/
+/// Card specific variables
+$card-body-padding-horizontal: 26px !default;
+$card-body-padding-vertical: 18px !default;
+$card-title-font-size: 1.125rem !default; //18px
+$card-sub-title-font-size: 0.875rem !default; //14px
+$card-title-font: $subtitle-font-stack;
+$card-body-font: $title-font-stack; //
+/**
+*Default card
+**/
+.ui-card {
+  position: relative;
+  box-sizing: border-box;
+
+  &__title {
+    font-family: $card-title-font;
+    font-size: $card-title-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__sub-title {
+    display: block;
+    font-family: $card-title-font;
+    text-transform: uppercase;
+    font-size: $card-sub-title-font-size;
+    margin-bottom: 0.5rem;
+  }
+
+  &__header {
+    padding: $card-body-padding-vertical $card-body-padding-horizontal 0;
+  }
+
+  &__body {
+    font-family: $card-body-font;
+    padding: $card-body-padding-vertical $card-body-padding-horizontal;
+  }
+
+  &__footer {
+    padding: 0 $card-body-padding-horizontal $card-body-padding-vertical;
+  }
+
+  &-default {
+    background-color: $frost-white;
+  }
+
+  &-secondary {
+    background-color: $light-grey;
+  }
+}
+
+.ui-card-badge {
+  position: absolute;
+  top: 14px;
+  right: 26px;
+  z-index: 1;
+}
