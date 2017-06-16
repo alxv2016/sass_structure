@@ -1,75 +1,55 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass mixins.
-// -----------------------------------------------------------------------------
-
-
-
-
-
+/// -----------------------------------------------------------------------------
+/// This file contains all application-wide Sass mixins.
+/// -----------------------------------------------------------------------------
 /// Responsive breakpoint manager
 /// @access public
 /// @param {String} $breakpoint - Breakpoint
 /// @requires $breakpoints
 @mixin respond-to($breakpoint) {
-
-    @if map-has-key($breakpoints, $breakpoint) {
-        @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
-            @content;
-        }
+   @if map-has-key($breakpoints, $breakpoint){
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+       @content;
     }
-
-    @else {
-        @warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. '
-        + 'Please make sure it is defined in `$breakpoints` map.';
-    }
-
+  }
+  @else {
+     @warn'Unfortunately, no value could be retrieved from `#{$breakpoint}`. ' + 'Please make sure it is defined in `$breakpoints` map.';
+  }
 }
-
-
 /// Event wrapper
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector
 /// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
 @mixin on-event($self: false) {
-
-    @if $self {
-        &,
-        &:hover,
-        &:active,
-        &:focus
-        {
-            @content;
-        }
-    } @else {
-        &:hover,
-        &:active,
-        &:focus
-        {
-            @content;
-        }
+   @if $self{
+    &,
+    &:active,
+    &:focus,
+    &:hover {
+      @content;
     }
-
+  }
+  @else {
+    &:active,
+    &:focus,
+    &:hover {
+      @content;
+    }
+  }
 }
-
 /// Button styles modifiers
+/// will recieve in the order of: background-color border-color and font-color
 @mixin ui-btn-style( $background-color, $border, $color ) {
-    color: $color;
-    border: 1px solid $border;
-    background-color: $background-color;
+  color: $color;
+  border: 2px solid $border;
+  background-color: $background-color;
 }
-
-
 ///Padding mixings
+/// will recieve padding any combination of padding values
 @mixin padding($values...) {
-
-    @each $var in $values
-    {
-        padding: #{$var};
-    }
-
+   @each $var in $values{
+    padding: #{$var};
+  }
 }
-
-
 ///Clear fix
 /** clearfix
 **
@@ -78,16 +58,15 @@
  * Note: `display: block` with `overflow: hidden` is currently not working in the latest Safari
  **/
 @mixin clearfix() {
-/* 1 */
+  /* 1 */
   &::before {
-    content: "";
     display: table-cell;
+    content: '';
   }
-/* 2 */
+  /* 2 */
   &::after {
     display: block;
     clear: both;
-    content: "";
+    content: '';
   }
-
 }
