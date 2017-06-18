@@ -1403,19 +1403,41 @@ a:active, a:focus, a:hover {
 * adding 8px bottom margin to boostrap columns on stack
 **/
 [class*="col-"] {
-  margin-bottom: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .has--devider {
   position: relative;
 }
 
-.has--devider [class*="col-"]:nth-child(n+2) [class*="col-"]::before {
+.has--devider [class*="col-"]:nth-of-type(n+2)::before {
   content: '';
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
-  border-left: 2px solid #333;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  border-top: 1px solid #333;
+}
+
+@media (min-width: 768px) {
+  .has--devider [class*="col-"]:nth-of-type(n+2)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: 90%;
+    margin: auto;
+    border-top: 0;
+    border-left: 1px solid #333;
+  }
 }
 
 p {
