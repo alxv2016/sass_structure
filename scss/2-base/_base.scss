@@ -71,7 +71,7 @@ a {
   padding-bottom: 4px;
 }
 
-.has--devider {
+.row--divider {
   position: relative;
   [class*="col-"]:nth-of-type(n+2)::before {
     content: '';
@@ -83,7 +83,9 @@ a {
     width: 90%;
     height: auto;
     margin: auto;
-    border-top: 1px solid #333;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: $dark-grey;
   }
   @include respond-to ('medium') {
     [class*="col-"]:nth-of-type(n+2)::before {
@@ -96,8 +98,7 @@ a {
       width: auto;
       height: 90%;
       margin: auto;
-      border-top: 0;
-      border-left: 1px solid #333;
+      border-width: 0 0 0 1px;
     }
   }
 
