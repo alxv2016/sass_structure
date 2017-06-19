@@ -1753,24 +1753,44 @@ small {
   background-color: transparent;
 }
 
+/*button groups*/
 .ui-btn-group {
-  /* 1 */
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
   display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  /* 2 */
   vertical-align: middle;
-  /* 3 */
   position: relative;
 }
 
+.ui-btn-group .ui-btn-outline,
+.ui-btn-group .ui-btn-solid {
+  /*no spaces between each button*/
+  /*first button border radius*/
+  /*no border radius for buttons inbetween*/
+  /*last button border radius*/
+}
+
+.ui-btn-group .ui-btn-outline:nth-child(n+2),
 .ui-btn-group .ui-btn-solid:nth-child(n+2) {
   margin-left: -2px;
 }
 
-.ui-btn-group .ui-btn-outline:nth-child(n+2) {
-  margin-left: -2px;
+.ui-btn-group .ui-btn-outline:first-child:not(:last-child),
+.ui-btn-group .ui-btn-solid:first-child:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.ui-btn-group .ui-btn-outline:not(:first-child):not(:last-child),
+.ui-btn-group .ui-btn-solid:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.ui-btn-group .ui-btn-outline:last-child:not(:first-child),
+.ui-btn-group .ui-btn-solid:last-child:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
 /**
@@ -1925,4 +1945,14 @@ small {
   position: absolute;
   top: 14px;
   right: 26px;
+}
+
+/**
+*#ICONS
+**/
+.ui-offsite-icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
 }
