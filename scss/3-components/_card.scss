@@ -8,16 +8,24 @@ $card-title-font-size: 1.125rem !default; //18px
 $card-sub-title-font-size: 0.875rem !default; //14px
 $card-title-font: $subtitle-font-stack;
 $card-body-font: $title-font-stack; //
-/**
-*Default card
-**/
+/*card base-style*/
+
 .ui-card {
   display: flex;
   flex-flow: column;
   position: relative;
   box-sizing: border-box;
   height: 100%;
-
+  /*card image*/
+  &__media {
+    height: 240px;
+    overflow: hidden;
+  }
+  /*card header*/
+  &__header {
+    padding: $card-body-padding-vertical $card-body-padding-horizontal;
+  }
+  /*card title*/
   &__title {
     font-family: $card-title-font;
     font-size: $card-title-font-size;
@@ -25,7 +33,7 @@ $card-body-font: $title-font-stack; //
     text-transform: uppercase;
     margin: 0;
   }
-
+  /*card sub title*/
   &__sub-title {
     display: block;
     font-family: $card-title-font;
@@ -33,35 +41,53 @@ $card-body-font: $title-font-stack; //
     font-size: $card-sub-title-font-size;
     margin-bottom: 0.5rem;
   }
-
-  &__media {
-    height: 240px;
-    overflow: hidden;
-  }
-
-  &__header {
-    padding: $card-body-padding-vertical $card-body-padding-horizontal;
-  }
-
+  /*card body*/
   &__body {
     flex: 1 0 auto;
     font-family: $card-body-font;
     padding: $card-body-padding-vertical $card-body-padding-horizontal;
   }
-
+  /*card footer*/
   &__footer {
     padding: 0 $card-body-padding-horizontal $card-body-padding-vertical;
   }
-
+  /*card defalt color 'white'*/
   &-default {
     background-color: $frost-white;
   }
-
+  /*card secondary color 'light grey'*/
   &-secondary {
     background-color: $light-grey;
   }
+  /*card ad header - for ads specific*/
+  &__ad-header {
+    display: flex;
+    align-items: center;
+    padding: $card-body-padding-vertical $card-body-padding-horizontal;
+  }
+  /*card ad icon - for ads specific*/
+  &__ad-icon {
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+  }
+  /*card ad footer - for ads specific*/
+  &__ad-footer {
+    border-top: 1px solid $light-grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $card-body-padding-vertical $card-body-padding-horizontal;
+  }
+  /*card ad brand - client logos for ads specific*/
+  &__ad-logo {
+    margin-right: 16px;
+    width: 120px;
+  }
 }
-
+//
+/*card specific badge style'*/
 .ui-card-badge {
   position: absolute;
   top: 14px;

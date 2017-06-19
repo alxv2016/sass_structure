@@ -1801,9 +1801,7 @@ small {
 /**
 *#CARD
 **/
-/**
-*Default card
-**/
+/*card base-style*/
 .ui-card {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1818,6 +1816,27 @@ small {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 100%;
+  /*card image*/
+  /*card header*/
+  /*card title*/
+  /*card sub title*/
+  /*card body*/
+  /*card footer*/
+  /*card defalt color 'white'*/
+  /*card secondary color 'light grey'*/
+  /*card ad header - for ads specific*/
+  /*card ad icon - for ads specific*/
+  /*card ad footer - for ads specific*/
+  /*card ad brand - client logos for ads specific*/
+}
+
+.ui-card__media {
+  height: 240px;
+  overflow: hidden;
+}
+
+.ui-card__header {
+  padding: 18px 26px;
 }
 
 .ui-card__title {
@@ -1834,15 +1853,6 @@ small {
   text-transform: uppercase;
   font-size: 0.875rem;
   margin-bottom: 0.5rem;
-}
-
-.ui-card__media {
-  height: 240px;
-  overflow: hidden;
-}
-
-.ui-card__header {
-  padding: 18px 26px;
 }
 
 .ui-card__body {
@@ -1866,6 +1876,51 @@ small {
   background-color: #f3f4f8;
 }
 
+.ui-card__ad-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 18px 26px;
+}
+
+.ui-card__ad-icon {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.ui-card__ad-footer {
+  border-top: 1px solid #f3f4f8;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 18px 26px;
+}
+
+.ui-card__ad-logo {
+  margin-right: 16px;
+  width: 120px;
+}
+
+/*card specific badge style'*/
 .ui-card-badge {
   position: absolute;
   top: 14px;
