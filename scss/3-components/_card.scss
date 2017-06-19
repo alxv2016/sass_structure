@@ -35,7 +35,8 @@ $card-body-font: $title-font-stack; //
   }
 
   &__media {
-    height: 200px;
+    height: 240px;
+    overflow: hidden;
   }
 
   &__header {
