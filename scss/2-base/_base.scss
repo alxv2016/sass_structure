@@ -48,7 +48,6 @@ body {
   background-color: $light-grey;
   @include respond-to ('medium') {
     font-size: $global-medium-font-size;
-    line-height: $global-medium-line-height;
   }
 }
 /**
