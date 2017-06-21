@@ -8,13 +8,12 @@
 *font-family: 'Roboto Condensed', sans-serif;
 *font-family: 'Roboto Slab', serif;
 */
-@import url( 'https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto+Condensed:400,700|Roboto+Slab:300,400,700|Roboto:300,500,700');
-/**
+@import url( 'https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto+Condensed:400,700|Roboto+Slab:300,400,700|Roboto:300,500,700'); /**
  * Set up a decent box model on the root element
  */
+
 html {
-  font-size: 16px;
-  -webkit-box-sizing: border-box;
+  font-size: 100%;
   box-sizing: border-box;
   height: 100%;
   -ms-overflow-style: scrollbar;
@@ -25,34 +24,33 @@ html {
  * making all elements inheriting from the root box-sizing value
  * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
-
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 /**
 *Basic body styles
 */
-
 body {
   font-family: $body-font-stack;
   font-size: $global-font-size;
   font-weight: 300;
-  line-height: $global-line-height;
+  line-height: $global-lh;
   height: 100%;
   margin: 0;
   padding: 0;
-  color: $text-color;
+  color: $font-color;
   background-color: $light-grey;
+
   @include respond-to ('medium') {
-    font-size: $global-medium-font-size;
+    font-size: $global-font-size-m;
   }
 }
 /**
  * Basic styles for links
  */
+
 a {
   text-decoration: none;
   color: $brand-secondary-color;
@@ -62,16 +60,18 @@ a {
   }
 }
 /**
-* adding 8px bottom margin to boostrap columns on stack
-**/
-
+* adding 8px padding top/bottom to boostrap columns on stack
+*/
 [class*="col-"] {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-
+/**
+*divider modifier for rows, will add a dividing line between first and last column
+*/
 .row--divider {
   position: relative;
+
   [class*="col-"]:nth-of-type(n+2)::before {
     content: '';
     position: absolute;
@@ -86,6 +86,7 @@ a {
     border-style: solid;
     border-color: $dark-grey;
   }
+
   @include respond-to ('medium') {
     [class*="col-"]:nth-of-type(n+2)::before {
       content: '';
@@ -100,5 +101,4 @@ a {
       border-width: 0 0 0 1px;
     }
   }
-
 }

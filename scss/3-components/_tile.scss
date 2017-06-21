@@ -2,12 +2,10 @@
 /// Titles specific variables
 $tile-font-title: $subtitle-font-stack !default;
 $tile-font-subtitle: $title-font-stack !default;
-$tile-title-font-size: $global-xsmall-font-size !default;
-$tile-subtitle-font-size: $global-medium-font-size !default;
+$tile-title-font-size: $global-font-size-s !default;
+$tile-subtitle-font-size: $global-font-size-m !default;
 $tile-title-fontcolor: $charcoal-grey !default;
-$tile-subtitle-fontcolor: $charcoal-grey !default;
-
-/**
+$tile-subtitle-fontcolor: $charcoal-grey !default; /**
 *#TITLE
 **/
 
@@ -24,9 +22,11 @@ $tile-subtitle-fontcolor: $charcoal-grey !default;
 
   &__content {
     flex: 1 1 auto;
+
     &:not(:first-child) {
       padding-left: 18px;
     }
+
     &:not(:last-child) {
       padding-right: 18px;
     }
@@ -55,6 +55,5 @@ $tile-subtitle-fontcolor: $charcoal-grey !default;
     .tile__content {
       overflow: hidden;
     }
-
   }
 }

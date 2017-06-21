@@ -1,46 +1,27 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
-
-
-
 /// Body font family
 ///@Font family
-$body-font-stack: 'Roboto Slab', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-/// Headline font family
-$headline-font-stack: 'Montserrat', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-/// Title font family
-$title-font-stack: 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-/// Sub title font family
-$subtitle-font-stack: 'Roboto Condensed', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
-
-///Typography
+$body-font-stack: 'Roboto Slab', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default; /// Headline font family
+$headline-font-stack: 'Montserrat', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default; /// Title font family
+$title-font-stack: 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default; /// Sub title font family
+$subtitle-font-stack: 'Roboto Condensed', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default; ///Typography
 ///@Type
 $global-font-size: 1rem !default; //16px
-$global-xsmall-font-size: .75rem !default; // 12px
-$global-small-font-size: .875rem !default; // 14px
-$global-medium-font-size: 1.125rem !default; // 18px
-
-
+$global-font-size-xs: 0.75rem !default; // 12px
+$global-font-size-s: 0.875rem !default; // 14px
+$global-font-size-m: 1.125rem !default; // 18px
 //Line height
-$global-line-height: 1.5 !default;
-$global-small-line-height: 1.2 !default;
-$global-medium-line-height: 1.8 !default;
-/// Copy text color
-$text-color: rgb(34, 34, 34) !default;
-
-
-///@Colors
+$global-lh: 1.5 !default;
+$global-lh-s: 1.2 !default;
+$global-lh-m: 1.8 !default; /// Copy text color
+$font-color: rgb(34, 34, 34) !default; ///@Colors
 /// Main brand color
-$brand-primary-color: rgb(25, 25, 55) !default;
-/// Secondary brand color
-$brand-secondary-color: rgb(1,220,212) !default;
-
-
-/// Colors
+$brand-primary-color: rgb(25, 25, 55) !default; /// Secondary brand color
+$brand-secondary-color: rgb(1,220,212) !default; /// Colors
 $onyx-black: rgb(21, 22, 24) !default;
-$light-blue: rgb(99,84,235) !default;
+$indigo-blue: rgb(99,84,235) !default;
 $radical-red: rgb(230,0,76) !default;
 $robin-blue: rgb(6,199,217) !default;
 $moonstone-blue: rgb(69,178,232) !default;
@@ -54,15 +35,9 @@ $light-grey: rgb(243, 244, 248) !default;
 $mid-grey: rgb(236, 237, 242) !default;
 $dark-grey: rgb(171, 177, 183) !default;
 $charcoal-grey: rgb(48,56,65) !default;
-$transparent: rgba(0,0,0,0) !default;
-
+$transparent: rgba(0,0,0,0) !default; //
 ///@Breakpoints
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  'small': 576px,
-  'medium': 768px,
-  'large': 992px,
-  'xlarge': 1200px,
-) !default;
+$breakpoints: ( 'small': 576px, 'medium': 768px, 'large': 992px, 'xlarge': 1200px, ) !default;

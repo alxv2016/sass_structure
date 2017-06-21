@@ -1,4 +1,12 @@
-/**
+///BUTTON COMPONENT
+///Button specific variables
+$btn-font-size: $global-font-size !default;
+$btn-type: $title-font-stack !default;
+$btn-line-height: $global-lh-s !default;
+$btn-padding-s: 8px 24px !default;
+$btn-padding-m: 14px 32px !default;
+$btn-padding-l: 18px 40px !default;
+$btn-radius: 2px !default; /**
 *#BUTTONS
 **/
 /*
@@ -13,16 +21,15 @@
  * 8. Align text if button has a width
  * 9. Required for `a`.
  */
-
 .ui-btn {
   /* 4 */
   font: inherit;
   /* 6 */
-  font-family: $title-font-stack;
-  font-size: $global-font-size;
+  font-family: $btn-type;
+  font-size: $btn-font-size;
   font-weight: 500;
   /* 7 */
-  line-height: $global-small-line-height;
+  line-height: $btn-line-height;
   position: relative;
   display: inline-block;
   /* 3 */
@@ -30,7 +37,7 @@
   box-sizing: border-box;
   /* 1 */
   margin: 0;
-  padding: 14px 32px;
+  padding: $btn-padding-m;
   /* iOS Safari */
   -webkit-user-select: none;
   /* Konqueror HTML */
@@ -52,7 +59,7 @@
   color: inherit;
   /* 2 */
   border: none;
-  border-radius: 2px;
+  border-radius: $btn-radius;
   /* mobile specific */
   -webkit-appearance: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, .18);
@@ -84,12 +91,12 @@
   //modifier
   &--small {
     /* small button */
-    @include padding (8px 24px);
+    padding: $btn-padding-s;
   }
 
   &--large {
     /* large button */
-    @include padding (18px 40px);
+    padding: $btn-padding-l;
   }
 
   &:disabled {
@@ -104,7 +111,6 @@
 /*
  * Remove the inner border and padding in Firefox.
  */
-
 .ui-btn::-moz-focus-inner {
   padding: 0;
   border: 0;
@@ -152,7 +158,7 @@
 
   &--light-blue {
     /*light blue*/
-    @include ui-btn-style ($light-blue, $light-blue, $frost-white);
+    @include ui-btn-style ($indigo-blue, $indigo-blue, $frost-white);
   }
 }
 //outline style
@@ -182,11 +188,12 @@
 
   &--light-blue {
     /*light blue*/
-    @include ui-btn-style ($transparent, $light-blue, $light-blue);
+    @include ui-btn-style ($transparent, $indigo-blue, $indigo-blue);
   }
 }
 //
 /*button groups*/
+
 .ui-btn-group {
   display: inline-flex;
   vertical-align: middle;
@@ -213,4 +220,14 @@
       border-top-left-radius: 0;
     }
   }
+}
+
+.ui-btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui-btn-link {
+  @include ui-btn-style ($transparent, $transparent, $onyx-black);
 }

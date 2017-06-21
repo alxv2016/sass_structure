@@ -1,6 +1,5 @@
 /// -----------------------------------------------------------------------------
-/// This file contains all application-wide Sass mixins.
-/// -----------------------------------------------------------------------------
+/// This file contains all application-wide Sass mixins. -----------------------------------------------------------------------------
 /// Responsive breakpoint manager
 /// @access public
 /// @param {String} $breakpoint - Breakpoint
@@ -39,9 +38,9 @@
 /// Button styles modifiers
 /// will recieve in the order of: background-color border-color and font-color
 @mixin ui-btn-style( $background-color, $border, $color ) {
-  color: $color;
-  border: 2px solid $border;
   background-color: $background-color;
+  border: 2px solid $border;
+  color: $color;
 }
 ///Padding mixings
 /// will recieve padding any combination of padding values

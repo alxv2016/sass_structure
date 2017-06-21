@@ -4,25 +4,31 @@
 /// Label specific variables
 $label-padding-vertical: 4px !default;
 $label-padding-horizontal: 8px !default;
+$label-type: $subtitle-font-stack !default;
+$label-line-height: $global-lh-s !default;
+$label-font-size: $global-font-size-xs !default;
+$label-default: $indigo-blue !default;
+$label-attn: $radical-red !default;
+$label-font-color: $frost-white !default;
 
 .ui-label {
   display: inline-block;
-  font-family: $subtitle-font-stack;
+  font-family: $label-type;
   text-transform: uppercase;
   padding: $label-padding-vertical $label-padding-horizontal;
-  line-height: $global-small-line-height;
-  font-size: $global-xsmall-font-size;
+  line-height: $label-line-height;
+  font-size: $label-font-size;
   vertical-align: middle;
   border-radius: 2px;
   white-space: nowrap;
 
   &--attn {
-    background-color: $radical-red;
-    color: $frost-white;
+    background-color: $label-attn;
+    color: $label-font-color;
   }
 
   &--blue {
-    background-color: $light-blue;
-    color: $frost-white;
+    background-color: $label-default;
+    color: $label-font-color;
   }
 }

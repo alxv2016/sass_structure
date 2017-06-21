@@ -1,5 +1,13 @@
+///Typography
+///Typography specific variables
+$type-margin: 0 0 1.125rem !default; //18px
+$type-condensed: $subtitle-font-stack !default;
+$type-small: $global-font-size-xs !default; //12px
+$heading-line-height: $global-lh-s !default; //1.2
+$meta-text-color: $dark-grey !default;
+
 p {
-  margin: 0 0 1.125rem; //18px
+  margin: $type-margin; //18px
 }
 
 h1,
@@ -8,19 +16,19 @@ h3,
 h4 {
   font-weight: inherit;
   font-size: inherit;
-  line-height: $global-small-line-height;
-  margin: 0 0 1.125rem; //18px
+  line-height: $heading-line-height;
+  margin: $type-margin; //18px
 }
 
 small {
-  font-size: $global-xsmall-font-size;
+  font-size: $type-small;
 }
 
 .ui-text-meta {
-  font-family: $subtitle-font-stack;
-  font-size: $global-xsmall-font-size;
+  font-family: $type-condensed;
+  font-size: $type-small;
   text-transform: uppercase;
-  color: $charcoal-grey;
+  color: $meta-text-color;
   margin: 0;
 
   &--attn {
