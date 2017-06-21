@@ -1,9 +1,21 @@
-// Tiles
+/// Tiles
+/// Titles specific variables
+$tile-font-title: $subtitle-font-stack !default;
+$tile-font-subtitle: $title-font-stack !default;
+$tile-title-font-size: $global-xsmall-font-size !default;
+$tile-subtitle-font-size: $global-medium-font-size !default;
+$tile-title-fontcolor: $charcoal-grey !default;
+$tile-subtitle-fontcolor: $charcoal-grey !default;
 
-.tile {
+/**
+*#TITLE
+**/
+
+.ui-tile {
   align-content: space-between;
   align-items: flex-start;
   display: flex;
+  padding: 14px;
 
   &__action,
   &__icon {
@@ -12,23 +24,29 @@
 
   &__content {
     flex: 1 1 auto;
-
     &:not(:first-child) {
-      padding-left: 1rem;
+      padding-left: 18px;
     }
-
     &:not(:last-child) {
-      padding-right: 1rem;
+      padding-right: 18px;
     }
   }
 
   &__title {
-    line-height: 2rem;
+    font-family: $tile-font-title;
+    text-transform: uppercase;
+    font-size: $tile-title-font-size;
+    color: $tile-title-fontcolor;
+    font-weight: 700;
+    margin: 0;
   }
 
   &__sub-title {
-    color: lighten($dark-grey, 40%);
-    line-height: 2rem;
+    font-weight: 500;
+    font-family: $tile-font-subtitle;
+    font-size: $tile-subtitle-font-size;
+    text-transform: uppercase;
+    color: lighten($tile-subtitle-fontcolor, 40%);
   }
 
   &--tile-center {
@@ -38,9 +56,5 @@
       overflow: hidden;
     }
 
-    .tile__sub-title,
-    .tile__title {
-      margin-bottom: 0;
-    }
   }
 }

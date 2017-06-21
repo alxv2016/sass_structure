@@ -2099,7 +2099,10 @@ small {
   background-repeat: no-repeat;
 }
 
-.tile {
+/**
+*#TITLE
+**/
+.ui-tile {
   -webkit-align-content: space-between;
   -ms-flex-line-pack: justify;
   align-content: space-between;
@@ -2111,51 +2114,55 @@ small {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding: 14px;
 }
 
-.tile__action, .tile__icon {
+.ui-tile__action, .ui-tile__icon {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
 
-.tile__content {
+.ui-tile__content {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.tile__content:not(:first-child) {
-  padding-left: 1rem;
+.ui-tile__content:not(:first-child) {
+  padding-left: 18px;
 }
 
-.tile__content:not(:last-child) {
-  padding-right: 1rem;
+.ui-tile__content:not(:last-child) {
+  padding-right: 18px;
 }
 
-.tile__title {
-  line-height: 2rem;
+.ui-tile__title {
+  font-family: "Roboto Condensed", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #303841;
+  font-weight: 700;
+  margin: 0;
 }
 
-.tile__sub-title {
-  color: white;
-  line-height: 2rem;
+.ui-tile__sub-title {
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: #909ead;
 }
 
-.tile--tile-center {
+.ui-tile--tile-center {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.tile--tile-center .tile__content {
+.ui-tile--tile-center .tile__content {
   overflow: hidden;
-}
-
-.tile--tile-center .tile__sub-title,
-.tile--tile-center .tile__title {
-  margin-bottom: 0;
 }
