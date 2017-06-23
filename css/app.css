@@ -1534,6 +1534,13 @@ small {
   background-position: top center;
 }
 
+.ui-d-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /**
 *#BUTTONS
 **/
@@ -1858,7 +1865,10 @@ small {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  height: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
   /*card image*/
   /*card header*/
   /*card title*/

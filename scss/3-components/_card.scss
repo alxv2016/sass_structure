@@ -15,7 +15,7 @@ $card-body-font: $title-font-stack; //
   flex-flow: column;
   position: relative;
   box-sizing: border-box;
-  height: 100%;
+  flex: 0 0 100%;
   /*card image*/
   &__media {
     height: 240px;
