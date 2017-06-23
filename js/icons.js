@@ -242,3 +242,198 @@ var svgCamera = document.querySelectorAll('.camera-icon');
 for (i = 0; i < svgCamera.length; ++i) {
   svgCamera[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="camera-icon" d="M21 5h-3.5l-1.7-2.6c-.2-.2-.5-.4-.8-.4H9c-.3 0-.6.2-.8.4L6.5 5H3C1.3 5 0 6.3 0 8v11c0 1.7 1.3 3 3 3h18c1.7 0 3-1.3 3-3V8c0-1.7-1.3-3-3-3zm1 14c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V8c0-.6.4-1 1-1h4c.3 0 .6-.2.8-.4L9.5 4h4.9l1.7 2.6c.3.2.6.4.9.4h4c.6 0 1 .4 1 1v11zM12 8c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"/></svg>';
 }
+
+
+var svgCheck = document.querySelectorAll('.check-icon');
+
+for (i = 0; i < svgCheck.length; ++i) {
+  svgCheck[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="check-icon" d="M20.7 6.7l-11 11c-.2.2-.4.3-.7.3s-.5-.1-.7-.3l-5-5c-.4-.4-.4-1 0-1.4s1-.4 1.4 0L9 15.6 19.3 5.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4z"/></svg>';
+}
+
+
+var svgCheckCircle = document.querySelectorAll('.check-circle-icon');
+
+for (i = 0; i < svgCheckCircle.length; ++i) {
+  svgCheckCircle[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="check-circle-icon" d="M23 11.1v.9c0 6.1-4.9 11-11 11S1 18.1 1 12 5.9 1 12 1c1.6 0 3.1.3 4.5 1 .5.2.7.8.5 1.3-.2.5-.8.7-1.3.5-1.2-.5-2.4-.8-3.7-.8-5 0-9 4-9 9s4 9 9 9 9-4 9-9v-.9c0-.6.4-1 1-1s1 .4 1 1zm.7-8.8c-.4-.4-1-.4-1.4 0L12 12.6l-2.3-2.3c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l3 3c.2.2.5.3.7.3s.5-.1.7-.3l11-11c.4-.4.4-1 0-1.4z"/></svg>';
+}
+
+
+var svgCheckSquare = document.querySelectorAll('.check-square-icon');
+
+for (i = 0; i < svgCheckSquare.length; ++i) {
+  svgCheckSquare[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="check-square-icon" d="M23.7 3.7l-11 11c-.2.2-.4.3-.7.3s-.5-.1-.7-.3l-3-3c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l2.3 2.3L22.3 2.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4zM21 11c-.6 0-1 .4-1 1v7c0 .6-.4 1-1 1H5c-.6 0-1-.4-1-1V5c0-.6.4-1 1-1h11c.6 0 1-.4 1-1s-.4-1-1-1H5C3.3 2 2 3.3 2 5v14c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-7c0-.6-.4-1-1-1z"/></svg>';
+}
+
+var svgChevronDown = document.querySelectorAll('.chevron-down-icon');
+
+for (i = 0; i < svgChevronDown.length; ++i) {
+  svgChevronDown[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="chevron-down-icon" d="M18.7 9.7l-6 6c-.2.2-.4.3-.7.3s-.5-.1-.7-.3l-6-6c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l5.3 5.3 5.3-5.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4z"/></svg>';
+}
+
+
+var svgChevronLeft = document.querySelectorAll('.chevron-left-icon');
+
+for (i = 0; i < svgChevronLeft.length; ++i) {
+  svgChevronLeft[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="chevron-left-icon" d="M15.7 17.3c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3s-.5-.1-.7-.3l-6-6c-.4-.4-.4-1 0-1.4l6-6c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.4 12l5.3 5.3z"/></svg>';
+}
+
+
+var svgChevronRight = document.querySelectorAll('.chevron-right-icon');
+
+for (i = 0; i < svgChevronRight.length; ++i) {
+  svgChevronRight[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="chevron-right-icon" d="M15.7 12.7l-6 6c-.2.2-.4.3-.7.3s-.5-.1-.7-.3c-.4-.4-.4-1 0-1.4l5.3-5.3-5.3-5.3c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l6 6c.4.4.4 1 0 1.4z"/></svg>';
+}
+
+
+var svgChevronUp = document.querySelectorAll('.chevron-up-icon');
+
+for (i = 0; i < svgChevronUp.length; ++i) {
+  svgChevronUp[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="chevron-up-icon" d="M18.7 15.7c-.2.2-.4.3-.7.3s-.5-.1-.7-.3L12 10.4l-5.3 5.3c-.4.4-1 .4-1.4 0s-.4-1 0-1.4l6-6c.4-.4 1-.4 1.4 0l6 6c.4.4.4 1 0 1.4z"/></svg>';
+}
+
+
+var svgClipboard = document.querySelectorAll('.clipboard-icon');
+
+for (i = 0; i < svgClipboard.length; ++i) {
+  svgClipboard[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="clipboard-icon" d="M18 3h-1c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2H6C4.3 3 3 4.3 3 6v14c0 1.7 1.3 3 3 3h12c1.7 0 3-1.3 3-3V6c0-1.7-1.3-3-3-3zM9 3h6v2H9V3zm10 17c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1h1c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2h1c.6 0 1 .4 1 1v14z"/></svg>';
+}
+
+
+var svgClock = document.querySelectorAll('.clock-icon');
+
+for (i = 0; i < svgClock.length; ++i) {
+  svgClock[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="clock-icon" d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1zm0 20c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9zm3.7-6.7c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3s-.5-.1-.7-.3l-3-3c-.2-.2-.3-.4-.3-.7V6c0-.6.4-1 1-1s1 .4 1 1v5.6l2.7 2.7z"/></svg>';
+}
+
+
+var svgCreditCard = document.querySelectorAll('.creditcard-icon');
+
+for (i = 0; i < svgCreditCard.length; ++i) {
+  svgCreditCard[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="creditcard-icon" d="M21 3H3C1.3 3 0 4.3 0 6v12c0 1.7 1.3 3 3 3h18c1.7 0 3-1.3 3-3V6c0-1.7-1.3-3-3-3zM3 5h18c.6 0 1 .4 1 1v3H2V6c0-.6.4-1 1-1zm18 14H3c-.6 0-1-.4-1-1v-7h20v7c0 .6-.4 1-1 1z"/></svg>';
+}
+
+
+var svgDelete = document.querySelectorAll('.delete-icon');
+
+for (i = 0; i < svgDelete.length; ++i) {
+  svgDelete[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="delete-icon" d="M21 3H8c-.3 0-.6.1-.8.3l-7 8c-.3.4-.3.9 0 1.3l7 8c.2.3.5.4.8.4h13c1.7 0 3-1.3 3-3V6c0-1.7-1.3-3-3-3zm1 15c0 .6-.4 1-1 1H8.5l-6.1-7 6.1-7H21c.6 0 1 .4 1 1v12zm-3.3-8.3L16.4 12l2.3 2.3c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3s-.5-.1-.7-.3L15 13.4l-2.3 2.3c-.2.2-.4.3-.7.3s-.5-.1-.7-.3c-.4-.4-.4-1 0-1.4l2.3-2.3-2.3-2.3c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l2.3 2.3 2.3-2.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4z"/></svg>';
+}
+
+
+var svgDownload = document.querySelectorAll('.download-icon');
+
+for (i = 0; i < svgDownload.length; ++i) {
+  svgDownload[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="download-icon" d="M22 17v3c0 1.7-1.3 3-3 3H5c-1.7 0-3-1.3-3-3v-3c0-.6.4-1 1-1s1 .4 1 1v3c0 .6.4 1 1 1h14c.6 0 1-.4 1-1v-3c0-.6.4-1 1-1s1 .4 1 1zm-10.7-.3c.1.1.2.2.3.2.1.1.3.1.4.1s.3 0 .4-.1c.1-.1.2-.1.3-.2l4-4c.4-.4.4-1 0-1.4s-1-.4-1.4 0L13 13.6V2c0-.6-.4-1-1-1s-1 .4-1 1v11.6l-2.3-2.3c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l4 4z"/></svg>';
+}
+
+
+var svgDownloadCloud = document.querySelectorAll('.download-cloud-icon');
+
+for (i = 0; i < svgDownloadCloud.length; ++i) {
+  svgDownloadCloud[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="download-cloud-icon" d="M16.7 16.3c.4.4.4 1 0 1.4l-4 4c-.1.1-.2.2-.3.2-.1.1-.3.1-.4.1s-.3 0-.4-.1c-.1-.1-.2-.1-.3-.2l-4-4c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l2.3 2.3V12c0-.6.4-1 1-1s1 .4 1 1v6.6l2.3-2.3c.4-.4 1-.4 1.4 0zm6.2-5.8C21.8 9 20 8 18 8h-.5C16 3.6 11.3 1.1 6.8 2.3c-2.4.6-4.3 2-5.6 4.1C0 8.5-.4 10.9.2 13.2c.4 1.4 1 2.7 2 3.7.4.4 1 .5 1.4.1.4-.4.5-1 .1-1.4-.7-.8-1.3-1.8-1.5-2.9C1.7 10.9 2 9 3 7.4c1-1.6 2.5-2.8 4.3-3.2 3.7-1 7.6 1.3 8.5 5 .1.4.5.8 1 .8H18c1.3 0 2.5.6 3.3 1.7.6.9.9 1.9.7 3s-.8 2-1.6 2.6c-.5.3-.6.9-.2 1.4.2.3.5.4.8.4.2 0 .4-.1.6-.2 1.3-.9 2.2-2.3 2.5-3.9s-.3-3.1-1.2-4.5z"/></svg>';
+}
+
+
+var svgEditBox = document.querySelectorAll('.editbox-icon');
+
+for (i = 0; i < svgEditBox.length; ++i) {
+  svgEditBox[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="editbox-icon" d="M21 14.7V20c0 1.7-1.3 3-3 3H4c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3h5.3c.6 0 1 .4 1 1s-.4 1-1 1H4c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h14c.6 0 1-.4 1-1v-5.3c0-.6.4-1 1-1s1 .4 1 1zm1.7-8l-10 10c-.2.2-.4.3-.7.3H8c-.6 0-1-.4-1-1v-4c0-.3.1-.5.3-.7l10-10c.4-.4 1-.4 1.4 0l4 4c.4.4.4 1 0 1.4zM20.6 6L18 3.4l-9 9V15h2.6l9-9z"/></svg>';
+}
+
+
+var svgEdit = document.querySelectorAll('.edit-icon');
+
+for (i = 0; i < svgEdit.length; ++i) {
+  svgEdit[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="edit-icon" d="M21.7 7.3l-5-5c-.4-.4-1-.4-1.4 0l-13 13c-.2.2-.3.4-.3.7v5c0 .6.4 1 1 1h5c.3 0 .5-.1.7-.3l13-13c.4-.4.4-1 0-1.4zM7.6 20H4v-3.6l12-12L19.6 8l-12 12z"/></svg>';
+}
+
+
+var svgEditLine = document.querySelectorAll('.editline-icon');
+
+for (i = 0; i < svgEditLine.length; ++i) {
+  svgEditLine[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="editline-icon" d="M3 18h4c.3 0 .5-.1.7-.3l11-11c.4-.4.4-1 0-1.4l-4-4c-.4-.4-1-.4-1.4 0l-11 11c-.2.2-.3.4-.3.7v4c0 .6.4 1 1 1zm1-4.6l10-10L16.6 6l-10 10H4v-2.6zM22 22c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1s.4-1 1-1h18c.6 0 1 .4 1 1z"/></svg>';
+}
+
+
+var svgExternalLink = document.querySelectorAll('.externallink-icon');
+
+for (i = 0; i < svgExternalLink.length; ++i) {
+  svgExternalLink[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="externallink-icon" d="M19 13v6c0 1.7-1.3 3-3 3H5c-1.7 0-3-1.3-3-3V8c0-1.7 1.3-3 3-3h6c.6 0 1 .4 1 1s-.4 1-1 1H5c-.6 0-1 .4-1 1v11c0 .6.4 1 1 1h11c.6 0 1-.4 1-1v-6c0-.6.4-1 1-1s1 .4 1 1zm2.9-10.4c-.1-.2-.3-.4-.5-.5-.1-.1-.3-.1-.4-.1h-6c-.6 0-1 .4-1 1s.4 1 1 1h3.6l-9.3 9.3c-.4.4-.4 1 0 1.4.2.2.4.3.7.3s.5-.1.7-.3L20 5.4V9c0 .6.4 1 1 1s1-.4 1-1V3c0-.1 0-.3-.1-.4z"/></svg>';
+}
+
+
+var svgEye = document.querySelectorAll('.eye-icon');
+
+for (i = 0; i < svgEye.length; ++i) {
+  svgEye[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="eye-icon" d="M23.9 11.6C23.7 11.2 19.5 3 12 3S.3 11.2.1 11.6c-.1.3-.1.6 0 .9.2.3 4.4 8.5 11.9 8.5s11.7-8.2 11.9-8.6c.1-.2.1-.6 0-.8zM12 19c-5.4 0-8.9-5.4-9.9-7C3 10.4 6.6 5 12 5s8.9 5.4 9.9 7c-1 1.6-4.5 7-9.9 7zm0-11c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>';
+}
+
+
+var svgEyeOff = document.querySelectorAll('.eyeoff-icon');
+
+for (i = 0; i < svgEyeOff.length; ++i) {
+  svgEyeOff[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="eyeoff-icon" d="M8.9 4.5c-.1-.6.2-1.1.8-1.2.7-.2 1.5-.3 2.3-.3 7.5 0 11.7 8.2 11.9 8.6.1.3.1.6 0 .9-.6 1.2-1.4 2.3-2.3 3.4-.2.2-.5.4-.8.4-.2 0-.5-.1-.6-.2-.4-.4-.5-1-.1-1.4.7-.8 1.3-1.6 1.8-2.5-.9-1.6-4.5-7-9.9-7-.6 0-1.3.1-1.9.2-.5-.1-1-.4-1.2-.9zm14.8 19.2c-.2.2-.4.3-.7.3s-.5-.1-.7-.3l-4.5-4.5C16.1 20.4 14.1 21 12 21 4.5 21 .3 12.8.1 12.4c-.1-.3-.1-.6 0-.9 1.1-2.1 2.7-4 4.5-5.5L.3 1.7C-.1 1.3-.1.7.3.3s1-.4 1.4 0l22 22c.4.4.4 1 0 1.4zM9.9 12.1c0 .5.2 1 .6 1.4.4.4.9.6 1.4.5.2 0 .4 0 .6-.1L10 11.4c0 .3-.1.5-.1.7zm6.5 5.7L14 15.5c-.6.4-1.3.6-2 .6h-.1c-1 0-2-.4-2.7-1.1-.8-.7-1.2-1.7-1.3-2.8 0-.8.2-1.6.6-2.3L6 7.4C4.5 8.7 3.2 10.2 2.1 12c.9 1.6 4.5 7 9.9 7 1.5 0 3-.4 4.4-1.2z"/></svg>';
+}
+
+
+var svgFile = document.querySelectorAll('.file-icon');
+
+for (i = 0; i < svgFile.length; ++i) {
+  svgFile[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="file-icon" d="M20.9 8.6c-.1-.1-.1-.2-.2-.3l-7-7c-.1-.1-.2-.2-.3-.2-.1-.1-.3-.1-.4-.1H6C4.3 1 3 2.3 3 4v16c0 1.7 1.3 3 3 3h12c1.7 0 3-1.3 3-3V9c0-.1 0-.3-.1-.4zM14 4.4L17.6 8H14V4.4zM18 21H6c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1h6v6c0 .6.4 1 1 1h6v10c0 .6-.4 1-1 1z"/></svg>';
+}
+
+
+var svgFileMinus = document.querySelectorAll('.file-minus-icon');
+
+for (i = 0; i < svgFileMinus.length; ++i) {
+  svgFileMinus[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="file-minus-icon" d="M20.9 7.6c-.1-.1-.1-.2-.2-.3l-6-6c-.1-.1-.2-.2-.3-.2-.1-.1-.3-.1-.4-.1H6C4.3 1 3 2.3 3 4v16c0 1.7 1.3 3 3 3h12c1.7 0 3-1.3 3-3V8c0-.1 0-.3-.1-.4zM15 4.4L17.6 7H15V4.4zM18 21H6c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1h7v5c0 .6.4 1 1 1h5v11c0 .6-.4 1-1 1zm-2-6c0 .6-.4 1-1 1H9c-.6 0-1-.4-1-1s.4-1 1-1h6c.6 0 1 .4 1 1z"/></svg>';
+}
+
+
+var svgFilePlus = document.querySelectorAll('.file-plus-icon');
+
+for (i = 0; i < svgFilePlus.length; ++i) {
+  svgFilePlus[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="file-plus-icon" d="M20.9 7.6c-.1-.1-.1-.2-.2-.3l-6-6c-.1-.1-.2-.2-.3-.2-.1-.1-.3-.1-.4-.1H6C4.3 1 3 2.3 3 4v16c0 1.7 1.3 3 3 3h12c1.7 0 3-1.3 3-3V8c0-.1 0-.3-.1-.4zM15 4.4L17.6 7H15V4.4zM18 21H6c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1h7v5c0 .6.4 1 1 1h5v11c0 .6-.4 1-1 1zm-2-6c0 .6-.4 1-1 1h-2v2c0 .6-.4 1-1 1s-1-.4-1-1v-2H9c-.6 0-1-.4-1-1s.4-1 1-1h2v-2c0-.6.4-1 1-1s1 .4 1 1v2h2c.6 0 1 .4 1 1z"/></svg>';
+}
+
+
+var svgFileText = document.querySelectorAll('.file-text-icon');
+
+for (i = 0; i < svgFileText.length; ++i) {
+  svgFileText[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="file-text-icon" d="M20.9 7.6c-.1-.1-.1-.2-.2-.3l-6-6c-.1-.1-.2-.2-.3-.2-.1-.1-.3-.1-.4-.1H6C4.3 1 3 2.3 3 4v16c0 1.7 1.3 3 3 3h12c1.7 0 3-1.3 3-3V8c0-.1 0-.3-.1-.4zM15 4.4L17.6 7H15V4.4zM18 21H6c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1h7v5c0 .6.4 1 1 1h5v11c0 .6-.4 1-1 1zm-1-8c0 .6-.4 1-1 1H8c-.6 0-1-.4-1-1s.4-1 1-1h8c.6 0 1 .4 1 1zm0 4c0 .6-.4 1-1 1H8c-.6 0-1-.4-1-1s.4-1 1-1h8c.6 0 1 .4 1 1zM7 9c0-.6.4-1 1-1h2c.6 0 1 .4 1 1s-.4 1-1 1H8c-.6 0-1-.4-1-1z"/></svg>';
+}
+
+
+var svgFilm = document.querySelectorAll('.film-icon');
+
+for (i = 0; i < svgFilm.length; ++i) {
+  svgFilm[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="film-icon" d="M19.8 1H4.2C2.4 1 1 2.4 1 4.2v15.6C1 21.6 2.4 23 4.2 23h15.6c1.8 0 3.2-1.4 3.2-3.2V4.2C23 2.4 21.6 1 19.8 1zM18 8h3v3h-3V8zm-2 3H8V3h8v8zM6 11H3V8h3v3zm-3 2h3v3H3v-3zm5 0h8v8H8v-8zm10 0h3v3h-3v-3zm3-8.8V6h-3V3h1.8c.7 0 1.2.5 1.2 1.2zM4.2 3H6v3H3V4.2C3 3.5 3.5 3 4.2 3zM3 19.8V18h3v3H4.2c-.7 0-1.2-.5-1.2-1.2zM19.8 21H18v-3h3v1.8c0 .7-.5 1.2-1.2 1.2z"/></svg>';
+}
+
+
+var svgFilter = document.querySelectorAll('.filter-icon');
+
+for (i = 0; i < svgFilter.length; ++i) {
+  svgFilter[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="filter-icon" d="M22.9 2.6c-.2-.4-.5-.6-.9-.6H2c-.4 0-.7.2-.9.6-.2.3-.1.7.1 1L9 12.8V19c0 .4.2.7.6.9l4 2c.1.1.2.1.4.1s.4 0 .5-.1c.3-.2.5-.5.5-.9v-8.2l7.8-9.2c.2-.3.3-.7.1-1zm-9.7 9.2c-.1.2-.2.4-.2.7v6.9l-2-1v-5.9c0-.2-.1-.5-.2-.6L4.2 4h15.7l-6.7 7.8z"/></svg>';
+}
+
+
+var svgFlag = document.querySelectorAll('.flag-icon');
+
+for (i = 0; i < svgFlag.length; ++i) {
+  svgFlag[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="flag-icon" d="M20.4 2.1c-.4-.2-.8-.1-1.1.2 0 0-.9.7-3.3.7-1.3 0-2.4-.5-3.6-.9C11.1 1.5 9.7 1 8 1 4.8 1 3.5 2.1 3.3 2.3c-.2.2-.3.4-.3.7v19c0 .6.4 1 1 1s1-.4 1-1v-6.5c.4-.2 1.4-.5 3-.5 1.3 0 2.4.5 3.6.9 1.3.5 2.7 1.1 4.4 1.1 3.3 0 4.5-1.1 4.7-1.3.2-.2.3-.4.3-.7V3c0-.4-.2-.7-.6-.9zM19 14.5c-.4.2-1.4.5-3 .5-1.3 0-2.4-.5-3.6-.9C11.1 13.5 9.7 13 8 13c-1.3 0-2.3.2-3 .4V3.5c.4-.2 1.4-.5 3-.5 1.3 0 2.4.5 3.6.9C12.9 4.5 14.3 5 16 5c1.3 0 2.3-.2 3-.4v9.9z"/></svg>';
+}
+
+
+var svgFolder = document.querySelectorAll('.folder-icon');
+
+for (i = 0; i < svgFolder.length; ++i) {
+  svgFolder[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="folder-icon" d="M20 5h-8.5L9.8 2.4C9.6 2.2 9.3 2 9 2H4C2.3 2 1 3.3 1 5v14c0 1.7 1.3 3 3 3h16c1.7 0 3-1.3 3-3V8c0-1.7-1.3-3-3-3zm1 14c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1V5c0-.6.4-1 1-1h4.5l1.7 2.6c.2.2.5.4.8.4h9c.6 0 1 .4 1 1v11z"/></svg>';
+}
+
+
+var svgGrid = document.querySelectorAll('.grid-icon');
+
+for (i = 0; i < svgGrid.length; ++i) {
+  svgGrid[i].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="grid-icon" d="M10 2H3c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1V3c0-.6-.4-1-1-1zM9 9H4V4h5v5zm12-7h-7c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1V3c0-.6-.4-1-1-1zm-1 7h-5V4h5v5zm1 4h-7c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1v-7c0-.6-.4-1-1-1zm-1 7h-5v-5h5v5zm-10-7H3c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1v-7c0-.6-.4-1-1-1zm-1 7H4v-5h5v5z"/></svg>';
+}
