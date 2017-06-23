@@ -1,13 +1,16 @@
-///Typography
-///Typography specific variables
-$type-margin: 0 0 1.125rem !default; //18px
-$type-condensed: $subtitle-font-stack !default;
-$type-small: $global-font-size-xs !default; //12px
-$heading-line-height: $global-lh-s !default; //1.2
-$meta-text-color: $dark-grey !default;
+// Typography
+//
+// Typography specific variables
+$type-margin: 0 0 1.125rem 0 !default; // 18px bottom
+$type-condensed: $font-family-roboto-condensed;
+$type-small: $font-size-xs; // 12px
+$type-weight: $font-weight-bold;
+$type-line-height: $line-height-xs; // 1.2
+$meta-text-color: $dark-grey;
+$attn-text-color: $radical-red;
 
 p {
-  margin: $type-margin; //18px
+  margin: $type-margin; // 18px
 }
 
 h1,
@@ -16,8 +19,8 @@ h3,
 h4 {
   font-weight: inherit;
   font-size: inherit;
-  line-height: $heading-line-height;
-  margin: $type-margin; //18px
+  line-height: $type-line-height;
+  margin: $type-margin; // 18px
 }
 
 small {
@@ -32,7 +35,7 @@ small {
   margin: 0;
 
   &--attn {
-    font-weight: 700;
-    color: $radical-red;
+    font-weight: $type-weight;
+    color: $attn-text-color;
   }
 }

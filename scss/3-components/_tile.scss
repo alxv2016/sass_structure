@@ -1,14 +1,15 @@
 /// Tiles
 /// Titles specific variables
-$tile-font-title: $subtitle-font-stack !default;
-$tile-font-subtitle: $title-font-stack !default;
-$tile-title-font-size: $global-font-size-s !default;
-$tile-subtitle-font-size: $global-font-size-m !default;
-$tile-title-fontcolor: $charcoal-grey !default;
-$tile-subtitle-fontcolor: $charcoal-grey !default; /**
+$tile-font-title: $font-family-roboto;
+$tile-font-subtitle: $font-family-roboto-condensed;
+$tile-title-font-size: $font-size-sm;
+$tile-subtitle-font-size: $font-size-m;
+$tile-title-fontcolor: $charcoal-grey;
+
+
+/**
 *#TITLE
 **/
-
 .ui-tile {
   align-content: space-between;
   align-items: flex-start;
@@ -46,7 +47,7 @@ $tile-subtitle-fontcolor: $charcoal-grey !default; /**
     font-family: $tile-font-subtitle;
     font-size: $tile-subtitle-font-size;
     text-transform: uppercase;
-    color: lighten($tile-subtitle-fontcolor, 40%);
+    color: lighten($tile-title-fontcolor, 40%);
   }
 
   &--tile-center {

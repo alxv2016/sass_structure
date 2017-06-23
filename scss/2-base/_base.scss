@@ -1,17 +1,27 @@
-// -----------------------------------------------------------------------------
-// This file contains very basic styles.
-// -----------------------------------------------------------------------------
-/**
-*Font family :
-*font-family: 'Montserrat', sans-serif;
-*font-family: 'Roboto', sans-serif;
-*font-family: 'Roboto Condensed', sans-serif;
-*font-family: 'Roboto Slab', serif;
-*/
-@import url( 'https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto+Condensed:400,700|Roboto+Slab:300,400,700|Roboto:300,500,700'); /**
- * Set up a decent box model on the root element
- */
+// General body styles
+//
+// base variables for body elements
+//
+$body-font-family: $font-family-roboto;
+$body-font-size: $font-size-base; //16px
+$body-font-size-m: $font-size-m; //18px
+$body-font-weight: $font-weight-light; //300
+$body-font-color: $font-color-base;
+$body-line-height: $line-height-base; //1.5
 
+$body-link-color: $brand-secondary;
+$body-background-color: $light-grey;
+
+/**
+*#Fontfamily
+*/
+@import url( 'https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto+Condensed:400,700|Roboto+Slab:300,400,700|Roboto:300,500,700');
+
+
+/**
+ * Set up a decent box model on the root element, set root font-size 100% of
+ // browser standard for rem units.
+ */
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -33,18 +43,18 @@ html {
 *Basic body styles
 */
 body {
-  font-family: $body-font-stack;
-  font-size: $global-font-size;
-  font-weight: 300;
-  line-height: $global-lh;
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  font-weight: $body-font-weight;
+  line-height: $body-line-height;
   height: 100%;
   margin: 0;
   padding: 0;
-  color: $font-color;
-  background-color: $light-grey;
+  color: $body-font-color;
+  background-color: $body-background-color;
 
   @include respond-to ('medium') {
-    font-size: $global-font-size-m;
+    font-size: $body-font-size-m;
   }
 }
 /**
@@ -53,10 +63,10 @@ body {
 
 a {
   text-decoration: none;
-  color: $brand-secondary-color;
+  color: $body-link-color;
   @include on-event {
     text-decoration: underline;
-    color: $brand-secondary-color;
+    color: $body-link-color;
   }
 }
 /**

@@ -1,21 +1,23 @@
+// Label component
+// Label specific variables
+$label-padding-x: 4px !default;
+$label-padding-y: 8px !default;
+$label-type: $font-family-roboto-condensed;
+$label-line-height: $line-height-xs;
+$label-font-size: $font-size-xs;
+$label-default: $indigo-blue;
+$label-attn: $radical-red;
+$label-font-color: $frost-white;
+
+
 /**
 *#LABEL
 **/
-/// Label specific variables
-$label-padding-vertical: 4px !default;
-$label-padding-horizontal: 8px !default;
-$label-type: $subtitle-font-stack !default;
-$label-line-height: $global-lh-s !default;
-$label-font-size: $global-font-size-xs !default;
-$label-default: $indigo-blue !default;
-$label-attn: $radical-red !default;
-$label-font-color: $frost-white !default;
-
 .ui-label {
   display: inline-block;
   font-family: $label-type;
   text-transform: uppercase;
-  padding: $label-padding-vertical $label-padding-horizontal;
+  padding: $label-padding-x $label-padding-y;
   line-height: $label-line-height;
   font-size: $label-font-size;
   vertical-align: middle;

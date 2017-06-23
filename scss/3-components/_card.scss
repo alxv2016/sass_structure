@@ -1,15 +1,18 @@
-/**
-*#CARD
-**/
-/// Card specific variables
-$card-body-padding-horizontal: 26px !default;
-$card-body-padding-vertical: 18px !default;
-$card-title-font-size: 1.125rem !default; //18px
-$card-sub-title-font-size: 0.875rem !default; //14px
-$card-title-font: $subtitle-font-stack;
-$card-body-font: $title-font-stack; //
-/*card base-style*/
+// Card component
+// Card specific variables
+$card-body-padding-x: $padding-x-l;
+$card-body-padding-y: $padding-y-s;
+$card-font-size: $font-size-m; //18px
+$card-font-size-sm: $font-size-sm; //14px
+$card-font-weight: $font-weight-bold;
+$card-title-font: $font-family-roboto-condensed;
+$card-body-font: $font-family-roboto;
 
+
+/**
+*#Card
+*/
+/*card base-style*/
 .ui-card {
   display: flex;
   flex-flow: column;
@@ -23,13 +26,13 @@ $card-body-font: $title-font-stack; //
   }
   /*card header*/
   &__header {
-    padding: $card-body-padding-vertical $card-body-padding-horizontal;
+    padding: $card-body-padding-x $card-body-padding-y;
   }
   /*card title*/
   &__title {
     font-family: $card-title-font;
-    font-size: $card-title-font-size;
-    font-weight: 700;
+    font-size: $card-font-size;
+    font-weight: $card-font-weight;
     text-transform: uppercase;
     margin: 0;
   }
@@ -38,18 +41,18 @@ $card-body-font: $title-font-stack; //
     display: block;
     font-family: $card-title-font;
     text-transform: uppercase;
-    font-size: $card-sub-title-font-size;
+    font-size: $card-font-size-sm;
     margin-bottom: 0.5rem;
   }
   /*card body*/
   &__body {
     flex: 1 0 auto;
     font-family: $card-body-font;
-    padding: $card-body-padding-vertical $card-body-padding-horizontal;
+    padding: $card-body-padding-x $card-body-padding-y;
   }
   /*card footer*/
   &__footer {
-    padding: 0 $card-body-padding-horizontal $card-body-padding-vertical;
+    padding: 0 $card-body-padding-x $card-body-padding-y;
   }
   /*card defalt color 'white'*/
   &-default {
@@ -63,7 +66,7 @@ $card-body-font: $title-font-stack; //
   &__ad-header {
     display: flex;
     align-items: center;
-    padding: $card-body-padding-vertical $card-body-padding-horizontal;
+    padding: $card-body-padding-x $card-body-padding-y;
   }
   /*card ad icon - for ads specific*/
   &__ad-icon {
@@ -78,7 +81,7 @@ $card-body-font: $title-font-stack; //
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: $card-body-padding-vertical $card-body-padding-horizontal;
+    padding: $card-body-padding-x $card-body-padding-y;
   }
   /*card ad brand - client logos for ads specific*/
   &__ad-logo {

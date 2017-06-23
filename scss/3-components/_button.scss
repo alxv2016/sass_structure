@@ -1,12 +1,16 @@
-///BUTTON COMPONENT
-///Button specific variables
-$btn-font-size: $global-font-size !default;
-$btn-type: $title-font-stack !default;
-$btn-line-height: $global-lh-s !default;
+//Button component
+//
+// Button specific variables
+$btn-font-size: $font-size-base; // 16px
+$btn-font-family: $font-family-roboto;
+$btn-line-height: $line-height-xs;
 $btn-padding-s: 8px 24px !default;
 $btn-padding-m: 14px 32px !default;
 $btn-padding-l: 18px 40px !default;
-$btn-radius: 2px !default; /**
+$btn-radius: 2px !default;
+
+
+/**
 *#BUTTONS
 **/
 /*
@@ -25,7 +29,7 @@ $btn-radius: 2px !default; /**
   /* 4 */
   font: inherit;
   /* 6 */
-  font-family: $btn-type;
+  font-family: $btn-font-family;
   font-size: $btn-font-size;
   font-weight: 500;
   /* 7 */
